@@ -1,0 +1,51 @@
+<head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<section class="w-100 container-fluid bg-dark py-2">
+  <form class="w-100">
+    <div class="form-inline">
+      <div class="w-100 d-flex align-items-center">
+        <button type="submit" class="btn px-1 mr-2 fluid" (click)="findAllByName()">
+          <img src="../../assets/icons/search-line.svg" alt="">
+        </button>
+        <input type="text" [(ngModel)]='this.nome' name="inlineFormInput" class="form-control inputSearch fluid w-100"
+          id="inlineFormInput" placeholder="Busque por produtos" [ngModelOptions]="{standalone: true}">
+      </div>
+      <div>
+      </div>
+    </div>
+  </form>
+</section>
+
+<section class="w-100 bg-dark animate__animated animate__fadeInDown">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-md-4">
+      <div class="col mb-4" *ngFor="let item of listaProdutos | slice:0:4 ; let i=index ">
+        <div id="card" class="card border border-success pesquisa">
+          <div class="cardImg">
+            <img src="{{item.imag1}}" class="card-img-top innerImg" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{item.nome}}</h5>
+            <h5 class="card-title">{{item.preco | currency:'BRL'}}</h5>
+            <button type="button" class="btn btn-success" [routerLink]='["/prod", item.id]'>Ver detalhes do
+              produto</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div [hidden]="this.esconder">
+      <div class="d-flex justify-content-end pb-4 animate__animated animate__fadeIn">
+        <button type="button" class="btn btn-outline-success " [routerLink]='["/pesquisa", this.nome]'>Veja
+          mais...</button>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</section>

@@ -1,0 +1,20 @@
+<app-search></app-search>
+<section class="w-100 bg-dark">    
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-4" *ngFor="let item of listaProdutos">
+              <div class="card border border-success">
+                <div class="cardImg">
+                    <img src="{{item.imag1}}" class="card-img-top innerImg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">{{item.nome}}</h5>
+                  <h5 class="card-title">{{item.preco | currency:'BRL'}}</h5>
+                  <button type="button" class="btn btn-success" [routerLink]='["/prod", item.id]'>Ver detalhes do produto</button>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+    </div>
+</section>

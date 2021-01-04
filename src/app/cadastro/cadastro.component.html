@@ -1,0 +1,50 @@
+<div class="container-fluid">
+
+  <div class="row h-auto">
+    <div class="col-md-6 pl-0 slideImg">
+      <img src="../../assets/img/produto/plantacao2.jpg" class="img-fluid img">
+    </div>
+    <div class="col-md-6 p-5 d-flex flex-column justify-content-center align-items-center">
+      <h1 class="m-3 w-100">Cadastrar</h1>
+      <div class="w-100">
+        <div>
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o seu nome aqui"
+              [(ngModel)]='usuario.nome'>
+          </div>
+
+          <div class="form-group">
+            <label for="usuario">Nome de usuário</label>
+            <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Digite um email"
+              [(ngModel)]='usuario.usuario'>
+          </div>
+
+          <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha"
+              (input)='conferirSenha($event)' value='{{senha}}'>
+          </div>
+
+          <div class="form-group">
+            <label for="senhaConf">Confirmar Senha</label>
+            <input type="password" class="form-control" id="senhaConf" name="senhaConf" placeholder="Digite a confirmação de senha"
+              [(ngModel)]='usuario.senha'>
+          </div>
+
+          <div class="form-group text-secondary">
+
+            <input type="checkbox" border-0 class="check-input mr-2" (change)="toggleVisibility($event)" />
+            <label class="font-weight mr-2">Controler</label>
+            <label *ngIf='!this.usuario.admin' class="font-weight"></label>
+            <label *ngIf='!this.usuario.admin' class="font-weight"></label>
+          </div>
+          <button class="btn btn-outline-success" (click)='cadastrar()'>Cadastrar</button>
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

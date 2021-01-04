@@ -1,0 +1,83 @@
+<app-search></app-search>
+<!-- Hero section -->
+<section class="w-100">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="slideImg d-flex justify-content-center align-items-center slideImg">
+                    <img src="../../assets/img/organic.png" class="d-block w-100 img" alt="...">
+                </div>
+                <div class="carousel-caption d-flex justify-content-center align-items-start flex-column h-100">
+                    <h2 class="display-3 leadTitle text-left">Fortaleça pequenos produtores perto de você!</h2>
+                    <p class="lead text-left">Acreditamos no consumo responsável e sustentável. Conheça e apoie os
+                        pequenos produtores nas suas proximidades.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="slideImg d-flex justify-content-center align-items-center slideImg">
+                    <img src="../../assets/img/organic.png" class="d-block w-100 img" alt="...">
+                </div>
+                <div class="carousel-caption d-flex justify-content-center align-items-start flex-column h-100">
+                    <h2 class="display-3 leadTitle text-left">Dividir o pão de cada dia agora ficou mais fácil</h2>
+                    <p class="lead text-left">Entenda a funcionalidade de doação via vendaverde.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="slideImg d-flex justify-content-center align-items-center slideImg">
+                    <img src="../../assets/img/organic.png" class="d-block w-100 img" alt="...">
+                </div>
+                <div class="carousel-caption d-flex justify-content-center align-items-start flex-column h-100">
+                    <h2 class="display-3 leadTitle text-left">Acreditamos em pequenos esforços diários</h2>
+                    <p class="lead text-left">Apoie as reservas extrativistas locais. Conheça Link</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<!-- Hero section -->
+
+<!-- Cards de Produto -->
+<div class="pesquisa">
+    <section class="w-100 my-5 py-5 ">
+    <div class="container">
+
+        <div class="w-100 my-5 w-100 text-center">
+            <p class="color-font mb-0"><small>Fortaleça os produtores perto de você</small></p>
+            <h1 class="">Produtos em destaque</h1>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 ">
+            <div class="col mb-4" *ngFor="let item of listaProdutos">
+                <a [routerLink]='["/prod", item.id]' class="produto">
+                     <div class="card border text-dark">
+                    <div class="cardImg">
+                        <img src="{{item.imag1}}" class="card-img-top innerImg" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title t-produto">{{item.nome}}</h5>
+                        <h5 class="card-title">{{item.preco | currency:'BRL'}}</h5>
+                        <button type="button" class="btn btn-success" [routerLink]='["/prod", item.id]'>Ver detalhes do produto</button>
+                    </div>
+                </div>
+                </a>
+               
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+
+
+<!-- Cards de Produto -->

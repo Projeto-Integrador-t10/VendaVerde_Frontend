@@ -1,0 +1,49 @@
+.maxwidth {
+    max-width: 180px;
+}
+
+.viewheight {
+    height: 65vh;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+a{
+    text-decoration: none;
+    text-decoration-color: black;
+}
+
+.slideImg {
+    height: 70vh;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.img {
+    height: 100%;
+    object-fit: cover;
+}
+
+@media(max-width: 768px) {
+    .leadTitle {
+        font-size: 2rem;
+    }
+}
+
+.cardImg {
+    height: 200px;
+    overflow: hidden;
+}
+
+.innerImg {
+    object-fit: cover;
+    height: 100%;
+}
+.t-produto{
+    font-size: 18px;
+}
+
+a.produto:hover{
+    border: 2rem;
+     border-color: green;
+     background-color: green;
+}

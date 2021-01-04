@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+  <a class="navbar-brand" href="#">
+    <img src="../../assets/img/tomate-logo.svg" width="30" height="30" class="d-inline-block align-top"
+      alt="Logo do projeto. Imagem de um tomate verde." loading="lazy">
+    vendaverde
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="w-100 d-flex justify-content-end align-items-center">
+      <ul class="navbar-nav text-right">
+
+        <li class="nav-item ml-3">
+          <a class="nav-link p-3" routerLink='/home'>Home<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item ml-3">
+          <a class="nav-link p-3" routerLink='/sobre'>Sobre</a>
+        </li>
+
+        <div *ngIf='auth.btnLogin()'>
+          <li class="nav-item ml-3">
+            <a class="nav-link p-3" routerLink='/login'>Entrar</a>
+          </li>
+        </div>
+
+        <div *ngIf='auth.btnLogin()'>
+          <li class="nav-item ml-3">
+            <a class="nav-link p-3" routerLink='/cadastro'>Cadastrar</a>
+          </li>
+        </div>
+
+        <div *ngIf='auth.btnSair()'>
+          <li class="nav-item ml-3">
+            <a class="nav-link p-3" routerLink='/cadastro-produto'>Cadastrar produto</a>
+          </li>
+        </div>
+
+        <div *ngIf='auth.btnSair()'>
+          <li class="nav-item ml-3">
+            <a class="nav-link p-3" (click)='sair()'>sair</a>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>

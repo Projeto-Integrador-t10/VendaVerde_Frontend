@@ -1,0 +1,56 @@
+<div class="container my-5">
+
+    <h2 class="mb-4">Edite um produto</h2>
+
+    <div class="form-group">
+        <label class="" for="nome">Nome do produto:</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite aqui o nome do produto"
+            [(ngModel)]='produto.nome'>
+    </div>
+    <div class="form-group">
+        <label class="" for="nome">Primeira Imagem:</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite URL da imagem"
+            [(ngModel)]='produto.imag1'>
+    </div>
+    <div class="form-group">
+        <label class="" for="nome">Segunda Imagem:</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite URL da imagem"
+            [(ngModel)]='produto.imag2'>
+    </div>
+    <div class="form-group">
+        <label class="" for="nome">Terceira imagem:</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite URL da imagem"
+            [(ngModel)]='produto.imag3'>
+    </div>
+
+    <div class="form-group">
+        <label class="" for="titulo">Preço:</label>
+        <input type="number" class="form-control" id="preco" placeholder="Digite aqui o preço do produto"
+            [(ngModel)]='produto.preco'>
+    </div>
+
+    <div class="form-group">
+        <label class="" for="titulo">Quantidade:</label>
+        <input type="number" class="form-control" id="quantidade" placeholder="Digite aqui o preço do produto"
+            [(ngModel)]='produto.quantidade'>
+    </div>
+
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="estoque" [(ngModel)]='produto.estoque'>
+        <label class="form-check-label" for="">Produto em estoque</label>
+    </div>
+
+    <div class="form-group my-3">
+        <label class="" for="tema">Escolha uma categoria</label>
+        <select name="categoria" id='categoria' class="form-control" [(ngModel)]="idCategoria"
+            (change)='findAllCategorias()'>
+            <option *ngFor='let item of listaCategorias' value={{item.id}}>
+                {{item.nome}}
+            </option>
+        </select>
+    </div>
+
+    <div class="form-group d-flex justify-content-end">
+        <button type="button" class="btn btn-info" (click)='salvarProduto()'>Salvar produto</button>
+    </div>
+</div>

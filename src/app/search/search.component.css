@@ -1,0 +1,47 @@
+.inputSearch {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    margin-left: 0;
+}
+
+.inputSearch:focus {
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+}
+
+.inputSearch:active {
+    background-color: transparent;
+    outline: none;    
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+.cardImg {
+    height: 200px;
+    overflow: hidden;
+}
+
+.innerImg {
+    object-fit: cover;
+    height: 100%;
+}
+
+.pesquisa {
+    position: relative;
+    animation: mymove 3s;
+  }
+
+@keyframes mymove {
+0%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+
+  }

@@ -1,0 +1,14 @@
+a{
+    text-decoration: none;
+}
+
+
+.cardImg {
+    height: 200px;
+    overflow: hidden;
+}
+
+.innerImg {
+    object-fit: cover;
+    height: 100%;
+}

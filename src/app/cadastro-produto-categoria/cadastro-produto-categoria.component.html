@@ -1,0 +1,157 @@
+<div class="container my-5">
+
+    <div class="container my-3 px-0"> <!--  *ngIf='auth.userAdmin()' -->
+
+        <h2 class="my-5">Cadastre uma categoria</h2>
+        <div class="form-group">
+            <label class="" for="nome">Nome da categoria</label>
+            <input type="text" class="form-control" id="categoria" [(ngModel)]="categoria.nome"
+                placeholder="Digite aqui o nome da nova categoria">
+            <div class="form-group d-flex justify-content-end">
+                <button type="button" name="salvar" class="btn btn-info my-3" (click)='cadastrar()'>Salvar categoria</button>
+            </div>
+        </div>
+    
+    </div>
+    
+    <hr class="my-3">
+
+
+    <h2 class="my-5">Cadastre um produto</h2>
+
+    <div class="form-group">
+        <label class="" for="nome">Nome do produto:</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite aqui o nome do produto"
+            [(ngModel)]='produto.nome'>
+    </div>
+    <div class="form-group">
+        <label class="" for="nome">Descrição do produto:</label>
+        <input type="text" class="form-control" id="nome" placeholder="Digite aqui a descrição do produto"
+            [(ngModel)]='produto.descricao'>
+    </div>
+   
+    <div class="form-group">
+        <label class="" for="nome">Primeira imagem:</label>
+
+        <input type="text" class="form-control" id="nome" placeholder="URL da primeira imagem" [(ngModel)]='produto.imag1'>
+    </div>
+    <div class="form-group">
+        <label class="" for="nome">Segunda imagem:</label>
+        <input type="text" class="form-control" id="nome" placeholder="URL da segunda imagem" [(ngModel)]='produto.imag2'>
+    </div>
+    <div class="form-group">
+        <label class="" for="nome">Terceira imagem:</label>
+        <input type="text" class="form-control" id="nome" placeholder="URL da terceira imagem" [(ngModel)]='produto.imag3'>
+    </div>
+
+    <div class="form-group">
+        <label class="" for="titulo">Preço:</label>
+        <input type="number" class="form-control" id="preco" placeholder="Digite aqui o preço do produto"
+            [(ngModel)]='produto.preco'>
+    </div>
+
+    <div class="form-group">
+        <label class="" for="titulo">Quantidade:</label>
+
+        <input type="number" class="form-control" id="quantidade" name="quantidade" placeholder="Digite aqui a quantidade disponível"
+            [(ngModel)]='produto.quantidade'>
+
+    </div>
+
+    <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="estoque" [(ngModel)]='produto.estoque'>
+        <label class="form-check-label" for="">Produto em estoque</label>
+    </div>
+
+    <div class="form-group my-3">
+        <label class="" for="tema">Escolha uma categoria</label>
+        <select name="categoria" id='categoria' class="form-control" [(ngModel)]="idCategoria"
+            (change)='findByIdCategoria()'>
+            <option *ngFor='let item of listaCategorias' value={{item.id}}>
+                {{item.nome}}
+            </option>
+        </select>
+    </div>
+
+    <div class="form-group d-flex justify-content-end">
+        <button type="button" class="btn btn-info" (click)='salvarProduto()'>Salvar produto</button>
+    </div>
+</div>
+
+<hr class="my-3">
+
+<!-- Listar produtos cadastrados -->
+<div class="container my-5">
+    <h2 class="my-5">Produtos Cadastrados</h2>
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Nome do produto</th>
+                    <th scope="col">Quantidade</th>
+                    <th scope="col">Preço</th>
+                    <th scope="col">Categoria</th>
+                </tr>
+            </thead>
+            <tbody *ngFor='let produto of listaProdutos'>
+                <tr>
+                    <th>{{produto.id}}</th>
+                    <td>{{produto.nome}}</td>
+                    <td>{{produto.quantidade}}</td>
+                    <td>{{produto.preco | currency:'BRL' }}</td>
+                    <td>{{produto.categoria.nome}}</td>
+
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-outline-success mr-2 mt-1"
+                            [routerLink]="['/editar-produto', produto.id]">Editar</button>
+                        <button class="btn btn-outline-danger ml-3 mt-1"
+                            [routerLink]="['/delete-produto', produto.id]">Apagar</button>
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Criar Categoria nova -->
+
+<hr class="my-3">
+
+
+
+
+<!-- Listar produtos cadastrados -->
+<div class="container my-5" >
+    <h2 class="my-5">Categorias Cadastradas</h2>
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+
+                    <th scope="col">id</th>
+                    <th scope="col">Nome da categoria</th>
+
+                </tr>
+            </thead>
+            <tbody *ngFor='let categoria of listaCategorias'>
+                <tr>
+                    <th>{{categoria.id}}</th>
+                    <td>{{categoria.nome}}</td>
+
+                    <div class="d-flex justify-content-end" ><!-- *ngIf='auth.userAdmin()' -->
+
+                        <button class="mr-3 btn btn-outline-info" [routerLink]="['/editar-categoria', categoria.id]">
+                            Editar
+                        </button>
+
+                        <button class="btn btn-outline-danger ml-3" [routerLink]="['/delete-categoria', categoria.id]">
+
+                            Apagar
+                        </button>
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
