@@ -8,10 +8,10 @@
   <form class="w-100">
     <div class="form-inline">
       <div class="w-100 d-flex align-items-center">
-        <button type="submit" class="btn px-1 mr-2 fluid" (click)="findAllByName()">
+        <button type="submit" class="btn px-1 mr-2 fluid" aria-label="Botão de pesquisa" (click)="findAllByName()">
           <img src="../../assets/icons/search-line.svg" alt="">
         </button>
-        <input type="text" [(ngModel)]='this.nome' name="inlineFormInput" class="form-control inputSearch fluid w-100"
+        <input type="text" aria-label="Barra de pesquisa" [(ngModel)]='this.nome' name="inlineFormInput" class="form-control inputSearch fluid w-100"
           id="inlineFormInput" placeholder="Busque por produtos" [ngModelOptions]="{standalone: true}">
       </div>
       <div>

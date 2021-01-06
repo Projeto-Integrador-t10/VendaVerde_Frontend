@@ -39,7 +39,7 @@ export class PutCategoriaComponent implements OnInit {
     this.categoriaService.putCategoria(this.categoria).subscribe((resp: any = Categoria) => {
       this.categoria = resp
       this.router.navigate(['/cadastro-produto'])
-      this.alert.showAlertSuccess('Categoria atualizado com sucesso!')
+      this.alert.showAlertSuccess('Categoria atualizada com sucesso!')
     }, err=> {
       if(err.status=400){
         this.alert.showAlertDanger("Categoria relacionada, não é possível edita-la!")

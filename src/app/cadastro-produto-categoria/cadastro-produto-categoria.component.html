@@ -5,10 +5,10 @@
         <h2 class="my-5">Cadastre uma categoria</h2>
         <div class="form-group">
             <label class="" for="nome">Nome da categoria</label>
-            <input type="text" class="form-control" id="categoria" [(ngModel)]="categoria.nome"
+            <input type="text" class="form-control" id="categoria" [(ngModel)]="categoria.nome" aria-label="Área para digitar nova categoria"
                 placeholder="Digite aqui o nome da nova categoria">
             <div class="form-group d-flex justify-content-end">
-                <button type="button" name="salvar" class="btn btn-info my-3" (click)='cadastrar()'>Salvar categoria</button>
+                <button type="button" name="salvar" class="btn btn-info my-3" style=" background-color: #286090; border-color: #286090;" (click)='cadastrar()'>Salvar categoria</button>
             </div>
         </div>
     
@@ -21,51 +21,51 @@
 
     <div class="form-group">
         <label class="" for="nome">Nome do produto:</label>
-        <input type="text" class="form-control" id="nome" placeholder="Digite aqui o nome do produto"
+        <input type="text" class="form-control" id="nome" aria-label="Área para digitar novo produto" placeholder="Digite aqui o nome do produto"
             [(ngModel)]='produto.nome'>
     </div>
     <div class="form-group">
         <label class="" for="nome">Descrição do produto:</label>
-        <input type="text" class="form-control" id="nome" placeholder="Digite aqui a descrição do produto"
+        <input type="text" class="form-control" id="descriçao produto" aria-label="Área para digitar descrição do produto" placeholder="Digite aqui a descrição do produto"
             [(ngModel)]='produto.descricao'>
     </div>
    
     <div class="form-group">
         <label class="" for="nome">Primeira imagem:</label>
 
-        <input type="text" class="form-control" id="nome" placeholder="URL da primeira imagem" [(ngModel)]='produto.imag1'>
+        <input type="text" class="form-control" id="imagem1" aria-label="Área para colocar link da primeira imagem do produto" placeholder="URL da primeira imagem" [(ngModel)]='produto.imag1'>
     </div>
     <div class="form-group">
         <label class="" for="nome">Segunda imagem:</label>
-        <input type="text" class="form-control" id="nome" placeholder="URL da segunda imagem" [(ngModel)]='produto.imag2'>
+        <input type="text" class="form-control" id="imagem2" aria-label="Área para colocar link da segunda imagem do produto" placeholder="URL da segunda imagem" [(ngModel)]='produto.imag2'>
     </div>
     <div class="form-group">
         <label class="" for="nome">Terceira imagem:</label>
-        <input type="text" class="form-control" id="nome" placeholder="URL da terceira imagem" [(ngModel)]='produto.imag3'>
+        <input type="text" class="form-control" id="imagem3" aria-label="Área para colocar link da terceira imagem do produto" placeholder="URL da terceira imagem" [(ngModel)]='produto.imag3'>
     </div>
 
     <div class="form-group">
         <label class="" for="titulo">Preço:</label>
-        <input type="number" class="form-control" id="preco" placeholder="Digite aqui o preço do produto"
+        <input type="number" class="form-control" id="preco" aria-label="Área para indicar o preço do produto" placeholder="Digite aqui o preço do produto"
             [(ngModel)]='produto.preco'>
     </div>
 
     <div class="form-group">
         <label class="" for="titulo">Quantidade:</label>
 
-        <input type="number" class="form-control" id="quantidade" name="quantidade" placeholder="Digite aqui a quantidade disponível"
+        <input type="number" class="form-control" id="quantidade" name="quantidade" aria-label="Área para indicar a quantidade de produto" placeholder="Digite aqui a quantidade disponível"
             [(ngModel)]='produto.quantidade'>
 
     </div>
 
     <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="estoque" [(ngModel)]='produto.estoque'>
-        <label class="form-check-label" for="">Produto em estoque</label>
+        <input type="checkbox" class="form-check-input" id="estoque" aria-label="Checkbox para marcar se há estoque disponível" [(ngModel)]='produto.estoque'>
+        <label class="form-check-label" for="Marcar estoque">Produto em estoque</label>
     </div>
 
     <div class="form-group my-3">
         <label class="" for="tema">Escolha uma categoria</label>
-        <select name="categoria" id='categoria' class="form-control" [(ngModel)]="idCategoria"
+        <select name="categoria" id='escolha de categoria' class="form-control" aria-label="Lista de categorias cadastradas" [(ngModel)]="idCategoria"
             (change)='findByIdCategoria()'>
             <option *ngFor='let item of listaCategorias' value={{item.id}}>
                 {{item.nome}}
@@ -74,7 +74,7 @@
     </div>
 
     <div class="form-group d-flex justify-content-end">
-        <button type="button" class="btn btn-info" (click)='salvarProduto()'>Salvar produto</button>
+        <button type="button" class="btn btn-info" style=" background-color: #286090; border-color: #286090;" (click)='salvarProduto()'>Salvar produto</button>
     </div>
 </div>
 
@@ -104,10 +104,10 @@
 
                     <div class="d-flex justify-content-end">
 
-                        <button class="btn btn-outline-success mr-3 mt-2"
+                        <button class="btn btn-success mr-3 mt-2"
                             [routerLink]="['/editar-produto', produto.id]">Editar</button>
                             
-                        <button class="btn btn-outline-danger ml-3 mt-2 mr-3"
+                        <button class="btn btn-danger ml-3 mt-2 mr-3"
                             [routerLink]="['/delete-produto', produto.id]">Apagar</button>
                             
                     </div>
@@ -144,10 +144,10 @@
 
                     <div class="d-flex justify-content-end" ><!-- *ngIf='auth.userAdmin()' -->
 
-                        <button class="btn btn-outline-success mr-3 mt-2" 
+                        <button class="btn btn-success mr-3 mt-2" 
                         [routerLink]="['/editar-categoria', categoria.id]">Editar</button>
 
-                        <button class="btn btn-outline-danger ml-3 mt-2 mr-3" 
+                        <button class="btn btn-danger ml-3 mt-2 mr-3" 
                         [routerLink]="['/delete-categoria', categoria.id]">Apagar</button>
 
                     </div>
