@@ -17,7 +17,6 @@ export class CategoriaService {
   }
 
   getAllCategorias(): Observable<Categoria[]> {
-
     return this.http.get<Categoria[]>(`${this.BASE_URL}categoria`, this.token)
   }  
 
@@ -34,6 +33,7 @@ export class CategoriaService {
 
   deleteCategoria(id: number){
     return this.http.delete(`${this.BASE_URL}categoria/${id}`, this.token)
+
 
   }
 }

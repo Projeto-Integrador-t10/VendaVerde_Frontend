@@ -17,12 +17,12 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   logar(usuarioLogin: UsuarioLogin) : Observable<UsuarioLogin> {
-
     return this.http.post<UsuarioLogin>(`${this.BASE_URL}usuarios/logar`, usuarioLogin)
   }
 
   cadastrar(usuario: Usuario) : Observable<Usuario> {
     return this.http.post<Usuario>(`${this.BASE_URL}usuarios/cadastrar`, usuario)
+
 
   }
 
