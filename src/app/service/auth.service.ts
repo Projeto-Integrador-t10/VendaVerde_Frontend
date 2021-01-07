@@ -38,10 +38,9 @@ export class AuthService {
     if(token == null){ok = true} return ok
   }
 
-  userAdmin(){
-    let ok = false
-    let admin = environment.admin
-
-    if(admin == true){ok = true}else{ok = false} return ok
-  }
+  logado() {
+    let ok = false 
+    let token = localStorage.getItem('token')
+    if (token != null) { ok = true } return ok
+   }
 }
