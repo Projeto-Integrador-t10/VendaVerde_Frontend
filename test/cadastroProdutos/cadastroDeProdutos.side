@@ -1,0 +1,969 @@
+{
+  "id": "5b619afc-462f-4ab5-9f15-498ffbe0b5eb",
+  "version": "2.0",
+  "name": "cadastro de produtos",
+  "url": "http://localhost:4200/cadastro-produto",
+  "tests": [{
+    "id": "608687d7-feba-45da-a0d8-882fe91fc9ee",
+    "name": "Cadastro do Mirtilo",
+    "commands": [{
+      "id": "5522da73-f7d5-4699-be2a-67e663a9e370",
+      "comment": "",
+      "command": "open",
+      "target": "/cadastro-produto",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8c567db-1f2e-4cd3-abe8-db4c6782a7ea",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2515198-3943-41bf-9d13-6595f8662a54",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=.form-group:nth-child(4) > #nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ffe1e26-401c-4cc7-8c31-f756e0984328",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=.form-group:nth-child(4) > #nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87566065-8585-41b8-a49a-82394100610a",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=.form-group:nth-child(4) > #nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Mirtilo Americano"
+    }, {
+      "id": "a1daeeb2-b86d-4da8-820b-cbb7d59bdad0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(5) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(5) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6c7859c-186e-447c-8cc5-5483727ae313",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(5) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(5) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Mirtilo Americano produzido no Brasil de forma controlada e com ambientes simulados."
+    }, {
+      "id": "5e78655f-5921-4fb9-ad3f-51b563633895",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(6) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(6) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[3]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bfeb123-14f8-4484-8d01-53937e362927",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(6) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(6) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[3]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "https://images.unsplash.com/photo-1587242155092-d126d2db782f?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Ymx1ZWJlcnJ5fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+    }, {
+      "id": "4f4d5cec-b878-47eb-b9d6-829956ee3c02",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(7) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(7) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[4]", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4dae89fd-c29c-4871-8e59-f934e9500a65",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(7) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(7) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[4]", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "https://images.unsplash.com/photo-1566400628146-ae8f27849e90?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Ymx1ZWJlcnJ5fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+    }, {
+      "id": "9d5555e7-209f-4079-a7e0-585e53809d26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(8) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(8) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[5]", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f11586b-1a2d-4800-8520-149039379e6b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(8) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(8) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[5]", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "https://images.unsplash.com/photo-1577916082233-f97ed22e4df8?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Ymx1ZWJlcnJ5fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+    }, {
+      "id": "6e3d3f19-62b1-4662-a807-a97987732828",
+      "comment": "",
+      "command": "click",
+      "target": "id=preco",
+      "targets": [
+        ["id=preco", "id"],
+        ["css=#preco", "css:finder"],
+        ["xpath=//input[@id='preco']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "caf60b40-64df-4d66-b153-dce497339893",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=preco",
+      "targets": [],
+      "value": "12"
+    }, {
+      "id": "fb6fb686-e4b8-468b-aa71-290e5c1eaa84",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantidade",
+      "targets": [
+        ["id=quantidade", "id"],
+        ["name=quantidade", "name"],
+        ["css=#quantidade", "css:finder"],
+        ["xpath=//input[@id='quantidade']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "be5ec9a4-c690-4e81-8674-9b13d3fc8b5c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=quantidade",
+      "targets": [],
+      "value": "789"
+    }, {
+      "id": "86c922fa-d2b9-41a8-a636-f9db047f04d2",
+      "comment": "",
+      "command": "click",
+      "target": "id=estoque",
+      "targets": [
+        ["id=estoque", "id"],
+        ["css=#estoque", "css:finder"],
+        ["xpath=//input[@id='estoque']", "xpath:attributes"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d27c4b7-c0bd-421c-8d14-441be27a1607",
+      "comment": "",
+      "command": "click",
+      "target": "name=categoria",
+      "targets": [
+        ["name=categoria", "name"],
+        ["css=.my-3 > #categoria", "css:finder"],
+        ["xpath=//select[@id='categoria']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'frutas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3343b51e-26cf-4ac5-b5a6-7e2def2f9c67",
+      "comment": "",
+      "command": "select",
+      "target": "name=categoria",
+      "targets": [],
+      "value": "label=frutas"
+    }, {
+      "id": "3f0d7994-98e3-40f6-a758-e1a2a27b12ee",
+      "comment": "",
+      "command": "click",
+      "target": "name=categoria",
+      "targets": [
+        ["name=categoria", "name"],
+        ["css=.my-3 > #categoria", "css:finder"],
+        ["xpath=//select[@id='categoria']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'frutas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9019651f-e123-4249-87eb-7180c7cef5ee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(13) > .btn",
+      "targets": [
+        ["css=.form-group:nth-child(13) > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[11]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9b1d3cb5-85b0-420c-b05b-f5aaf5d59c2f",
+    "name": "Cadastro do Morango",
+    "commands": [{
+      "id": "ed4b1343-8b5a-4daa-9d48-823f1635735a",
+      "comment": "",
+      "command": "open",
+      "target": "/cadastro-produto",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d120e2b-b970-4469-bc1c-b929d83eedc4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "780f3786-0285-40ab-84c7-cac2eae10bce",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=.form-group:nth-child(4) > #nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "436efe68-6f77-4ffa-9fa4-55952eb9cb59",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=.form-group:nth-child(4) > #nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d21270b-42c8-46d2-92c6-7ce140516b63",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=.form-group:nth-child(4) > #nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Morango"
+    }, {
+      "id": "e9044e06-13ea-4c50-b6c5-3786bd6c6c8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(5) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(5) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7bf60d1-93eb-4e83-bb46-476f9676ebe8",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(5) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(5) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Morango natural produzido no interior de São Paulo com suas devidas recomendações."
+    }, {
+      "id": "3a646c73-2bdb-41b3-9f07-264f18c4164f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(6) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(6) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[3]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa507724-b861-41b6-96eb-56a2455ed56c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(6) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(6) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[3]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "https://images.unsplash.com/photo-1588165171080-c89acfa5ee83?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c3RyYXdiZXJyeXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+    }, {
+      "id": "751ec86e-68af-4901-95dd-4c2939a14ae1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(7) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(7) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[4]", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb168ad9-46c3-479a-b891-0997cb24eab1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(7) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(7) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[4]", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "https://images.unsplash.com/photo-1560155069-ad79768f2666?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+    }, {
+      "id": "a9f1d245-888f-4d38-9957-986abefb358f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(8) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(8) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[5]", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2e4387d-31b6-403b-8967-51ff9482c859",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(8) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(8) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[5]", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "https://images.unsplash.com/photo-1592457765434-70aacc2da743?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c3RyYXdiZXJyeXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+    }, {
+      "id": "679c0b7b-e8c5-424b-886e-2fd9f67d97cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=preco",
+      "targets": [
+        ["id=preco", "id"],
+        ["css=#preco", "css:finder"],
+        ["xpath=//input[@id='preco']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "615ff3c8-7a7d-4ff5-ac49-b3a280f40795",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=preco",
+      "targets": [],
+      "value": "5"
+    }, {
+      "id": "4266f423-b54b-4752-a690-e74c5b405dce",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantidade",
+      "targets": [
+        ["id=quantidade", "id"],
+        ["name=quantidade", "name"],
+        ["css=#quantidade", "css:finder"],
+        ["xpath=//input[@id='quantidade']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3af4f636-fdcf-4e49-9e9a-b6ed09d11ab0",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=quantidade",
+      "targets": [],
+      "value": "200"
+    }, {
+      "id": "794852a6-bf2c-4f14-972d-bac93ba69276",
+      "comment": "",
+      "command": "click",
+      "target": "id=estoque",
+      "targets": [
+        ["id=estoque", "id"],
+        ["css=#estoque", "css:finder"],
+        ["xpath=//input[@id='estoque']", "xpath:attributes"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21ebea33-84a8-4ab7-8e97-af3780d66b80",
+      "comment": "",
+      "command": "click",
+      "target": "name=categoria",
+      "targets": [
+        ["name=categoria", "name"],
+        ["css=.my-3 > #categoria", "css:finder"],
+        ["xpath=//select[@id='categoria']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'frutas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65f737a3-ba5e-488c-932b-b72d4e11b4d8",
+      "comment": "",
+      "command": "select",
+      "target": "name=categoria",
+      "targets": [],
+      "value": "label=frutas"
+    }, {
+      "id": "70425b5c-0ade-4da8-b5e6-a3acf5539345",
+      "comment": "",
+      "command": "click",
+      "target": "name=categoria",
+      "targets": [
+        ["name=categoria", "name"],
+        ["css=.my-3 > #categoria", "css:finder"],
+        ["xpath=//select[@id='categoria']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'frutas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a3b8d73-2edf-4925-9182-22bf81fda7e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(13) > .btn",
+      "targets": [
+        ["css=.form-group:nth-child(13) > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[11]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "35ad1ce5-ee89-49c3-8183-e295e7570fbc",
+    "name": "Cadastro do Pessego",
+    "commands": [{
+      "id": "47ce0e03-fe8e-48c9-beff-6de905060736",
+      "comment": "",
+      "command": "open",
+      "target": "/cadastro-produto",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6c2d0aa-e294-4348-9a64-6c827ce6bbf6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "399d5543-09ed-4e55-9f59-52973e8dc23e",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=.form-group:nth-child(4) > #nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62f1e265-3128-43ee-99f2-0293f16619bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=.form-group:nth-child(4) > #nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fa07f71-6265-4551-8632-d730d67d3276",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=.form-group:nth-child(4) > #nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Pessego"
+    }, {
+      "id": "328fa410-93d7-45a6-8567-0f10b2b4ddb8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(5) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(5) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4594a3b0-45ff-41d8-827b-f3119a2e85c8",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(5) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(5) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Pessego produzido com pesticidas e produtos totalmente regulamentados."
+    }, {
+      "id": "6dfa1da7-71c3-470a-b992-56db67089c9d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(6) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(6) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[3]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87252cb5-8fd1-463a-869f-81631febe6c7",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(6) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(6) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[3]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "https://images.unsplash.com/photo-1595124245030-41448b199d6d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8cGVhY2h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+    }, {
+      "id": "edae5c03-63e8-4e22-8069-628f9871f97c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(7) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(7) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[4]", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11205515-734e-401e-9fc1-281d0eb97052",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(7) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(7) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[4]", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "https://images.unsplash.com/photo-1595743825637-cdafc8ad4173?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cGVhY2h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+    }, {
+      "id": "f943eaf4-3ab3-4a2a-857e-50873df3212f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(8) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(8) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[5]", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff85a612-6c3d-487d-958b-3622f4e65039",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(8) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(8) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[5]", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "https://images.unsplash.com/photo-1602813812581-0713dae489da?ixid=MXwxMjA3fDB8MHxzZWFyY2h8M3x8cGVhY2h8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+    }, {
+      "id": "39b4cc0f-f569-4b64-80ac-4bbe9f6184a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=preco",
+      "targets": [
+        ["id=preco", "id"],
+        ["css=#preco", "css:finder"],
+        ["xpath=//input[@id='preco']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5161edfa-049f-4e04-8888-c4f7bf7ec237",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=preco",
+      "targets": [],
+      "value": "12"
+    }, {
+      "id": "d5b009ce-2fa5-4762-ab0d-148fc2fa2c3b",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantidade",
+      "targets": [
+        ["id=quantidade", "id"],
+        ["name=quantidade", "name"],
+        ["css=#quantidade", "css:finder"],
+        ["xpath=//input[@id='quantidade']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8041977a-156a-4cfd-8b25-c9d6fbc4eff9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=quantidade",
+      "targets": [],
+      "value": "349"
+    }, {
+      "id": "12993761-0577-412b-8f2f-7a758b18a99a",
+      "comment": "",
+      "command": "click",
+      "target": "id=estoque",
+      "targets": [
+        ["id=estoque", "id"],
+        ["css=#estoque", "css:finder"],
+        ["xpath=//input[@id='estoque']", "xpath:attributes"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4bbf55c-1a3a-4497-af5c-a632fb6d42a0",
+      "comment": "",
+      "command": "click",
+      "target": "name=categoria",
+      "targets": [
+        ["name=categoria", "name"],
+        ["css=.my-3 > #categoria", "css:finder"],
+        ["xpath=//select[@id='categoria']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'frutas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "070de827-46bd-40e3-b45f-029a946b7339",
+      "comment": "",
+      "command": "select",
+      "target": "name=categoria",
+      "targets": [],
+      "value": "label=frutas"
+    }, {
+      "id": "92ab678d-ef40-4de6-88f0-66c2e11bc745",
+      "comment": "",
+      "command": "click",
+      "target": "name=categoria",
+      "targets": [
+        ["name=categoria", "name"],
+        ["css=.my-3 > #categoria", "css:finder"],
+        ["xpath=//select[@id='categoria']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'frutas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32c9eb16-c840-42df-8b40-3efe492f8385",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(13) > .btn",
+      "targets": [
+        ["css=.form-group:nth-child(13) > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[11]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f4f95b78-b61e-4993-a4e7-bfbb2fc9dd33",
+    "name": "Cadastro do Maça",
+    "commands": [{
+      "id": "5ddaa238-4766-4a2b-b996-319a53a1e2c7",
+      "comment": "",
+      "command": "open",
+      "target": "/cadastro-produto",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3b48a89-1291-42bd-a9d3-5a7abe873f45",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a773453-f975-4f95-a4b4-d5342df1fbf1",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=.form-group:nth-child(4) > #nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af92fd80-7f95-43c0-9252-1580b5a2d0fa",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=.form-group:nth-child(4) > #nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "442c27a4-8667-43af-ae50-912b82e97d57",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=.form-group:nth-child(4) > #nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Maça Pêra"
+    }, {
+      "id": "a3538f4a-f137-4f34-b982-88cd1d51e219",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(5) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(5) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ef7f385-fa0b-4b21-893c-10dc934fee41",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(5) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(5) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Maça pera docinha orgânica."
+    }, {
+      "id": "dbe85f8f-c150-44c6-86c7-52461258e830",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(6) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(6) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[3]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd020265-05bf-4986-a354-2a5ac57d0063",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(6) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(6) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[3]", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8YXBwbGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+    }, {
+      "id": "3f07ac4b-eb93-4882-85eb-cf97bf33bdee",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(7) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(7) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[4]", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b469fcc-3dc6-4e2d-aa38-bce79667ad32",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(7) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(7) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[4]", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "https://images.unsplash.com/photo-1560155069-ad79768f2666?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+    }, {
+      "id": "2b0a95dc-aaf3-4302-aae2-a108c71d3f49",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(8) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(8) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[5]", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dc298c7-020a-4dca-8ee9-bc0bb59b158a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-group:nth-child(8) > #nome",
+      "targets": [
+        ["css=.form-group:nth-child(8) > #nome", "css:finder"],
+        ["xpath=(//input[@id='nome'])[5]", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "https://images.unsplash.com/photo-1576179635662-9d1983e97e1e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OXx8YXBwbGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
+    }, {
+      "id": "130ecdff-bdba-4174-ba1c-c473b51323cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=preco",
+      "targets": [
+        ["id=preco", "id"],
+        ["css=#preco", "css:finder"],
+        ["xpath=//input[@id='preco']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a75dd8b7-a6dc-4bf6-94f2-19c067d367ca",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=preco",
+      "targets": [],
+      "value": "5"
+    }, {
+      "id": "d40583bb-b6fb-4e63-87c7-8340893a31e4",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantidade",
+      "targets": [
+        ["id=quantidade", "id"],
+        ["name=quantidade", "name"],
+        ["css=#quantidade", "css:finder"],
+        ["xpath=//input[@id='quantidade']", "xpath:attributes"],
+        ["xpath=//div[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1a17ebb-115b-486e-a7e5-2ecb6c368a2d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=quantidade",
+      "targets": [],
+      "value": "264"
+    }, {
+      "id": "abb313f5-356c-417d-9660-d0662b911c04",
+      "comment": "",
+      "command": "click",
+      "target": "id=estoque",
+      "targets": [
+        ["id=estoque", "id"],
+        ["css=#estoque", "css:finder"],
+        ["xpath=//input[@id='estoque']", "xpath:attributes"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc5f3341-8dfc-43cd-92a7-cbc03b621cdd",
+      "comment": "",
+      "command": "click",
+      "target": "name=categoria",
+      "targets": [
+        ["name=categoria", "name"],
+        ["css=.my-3 > #categoria", "css:finder"],
+        ["xpath=//select[@id='categoria']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'frutas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c28ab32-80b6-4a7c-9062-aaa9aa9df960",
+      "comment": "",
+      "command": "select",
+      "target": "name=categoria",
+      "targets": [],
+      "value": "label=frutas"
+    }, {
+      "id": "26c7f11f-7983-46ef-9ee5-99b53f20bff6",
+      "comment": "",
+      "command": "click",
+      "target": "name=categoria",
+      "targets": [
+        ["name=categoria", "name"],
+        ["css=.my-3 > #categoria", "css:finder"],
+        ["xpath=//select[@id='categoria']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'frutas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f25f134-8496-4149-906a-dee1294b1675",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-group:nth-child(13) > .btn",
+      "targets": [
+        ["css=.form-group:nth-child(13) > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[3]", "xpath:attributes"],
+        ["xpath=//div[11]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fa91e475-a58a-4a13-a3ff-ce93db973123",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["608687d7-feba-45da-a0d8-882fe91fc9ee"]
+  }],
+  "urls": ["http://localhost:4200/", "http://localhost:4200/cadastro-produto"],
+  "plugins": []
+}
