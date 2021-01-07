@@ -65,8 +65,7 @@
 
     <div class="form-group my-3">
         <label class="" for="tema">Escolha uma categoria</label>
-        <select name="categoria" id='escolha de categoria' class="form-control" aria-label="Lista de categorias cadastradas" [(ngModel)]="idCategoria"
-            (change)='findByIdCategoria()'>
+        <select name="categoria" id='escolha de categoria' class="form-control" aria-label="Lista de categorias cadastradas" [(ngModel)]="idCategoria">
             <option *ngFor='let item of listaCategorias' value={{item.id}}>
                 {{item.nome}}
             </option>

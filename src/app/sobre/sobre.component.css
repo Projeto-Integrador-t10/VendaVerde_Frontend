@@ -22,16 +22,35 @@
 }
   
 .faGithub, .faLinkedin{
-    color: #182C2D;
+    color:#FBF8ED;
+    
 }
 
-.faLinkedin:hover{
-color: #0072b1;
+.faGithub:hover,.faLinkedin:hover{
+    color:#182C2D;
+    transition: 0.3s;
 }
 
-.faGithub:hover{
-color: #49B577;
-}
 #sobre {
     text-indent: 4em;
+}
+
+.fundo:hover{
+    background-color: #49B577;
+    cursor: pointer;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    border-radius: 20px;
+    z-index: 2; 
+    transition: 0.5s;
+}
+
+.car:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 1.1; 
+    transition: 0.4s;
 }
