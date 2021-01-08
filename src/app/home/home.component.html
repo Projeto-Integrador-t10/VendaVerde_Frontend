@@ -49,9 +49,19 @@
 </section>
 <!-- Hero section -->
 
+<!-- categorias -->
+<div class="mt-5 mb-5 pt-2 pb-3">
+    <h2 class=" text-center ">Veja produtos por categoria</h2>
+    <div class="row m-3  w-30 d-flex justify-content-center">
+        <div class="m-2 " *ngFor="let item of listaCategorias">
+           <button type="button" class="btn btn-success  p-2 rounded-pill" [routerLink]='["/categoria", item.id]'>{{item.nome}}</button>
+        </div>
+    </div>
+</div>
+
 <!-- Cards de Produto -->
 <div class="pesquisa">
-    <section class="w-100 my-5 py-5 ">
+    <section class="w-100  ">
     <div class="container">
 
         <div class="w-100 my-5 w-100 text-center">

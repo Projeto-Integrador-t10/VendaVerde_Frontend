@@ -58,6 +58,7 @@ export class HomeComponent implements OnInit {
       console.log("Lista de categorias" + JSON.stringify(this.listaCategorias))
     })
   }
+  
   findByIdCategoria() {
     this.categoriaService.getByIdCategoria(this.categoria.id).subscribe((resp: any = Categoria) => {
       this.categoria = resp;

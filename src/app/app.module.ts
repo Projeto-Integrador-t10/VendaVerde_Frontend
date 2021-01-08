@@ -21,6 +21,7 @@ import { DeleteCategoriaComponent } from './delete-categoria/delete-categoria.co
 import { ProductComponent } from './product/product.component';
 import { AlertasComponent } from './alertas/alertas.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
+import { PesquisaCategoriaComponent } from './pesquisa-categoria/pesquisa-categoria.component';
 
  
 @NgModule({
@@ -40,7 +41,8 @@ import { PesquisaComponent } from './pesquisa/pesquisa.component';
     DeleteCategoriaComponent,
     ProductComponent,
     AlertasComponent,
-    PesquisaComponent
+    PesquisaComponent,
+    PesquisaCategoriaComponent
   ],
   imports: [
     BrowserModule,

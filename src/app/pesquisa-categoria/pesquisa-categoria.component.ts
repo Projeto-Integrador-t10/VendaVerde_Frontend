@@ -1,4 +1,3 @@
-import { Route } from '@angular/compiler/src/core';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Categoria } from '../model/Categoria';
@@ -9,18 +8,20 @@ import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
 
 @Component({
-  selector: 'app-cadastro-produto-categoria',
-  templateUrl: './cadastro-produto-categoria.component.html',
-  styleUrls: ['./cadastro-produto-categoria.component.css']
+  selector: 'app-pesquisa-categoria',
+  templateUrl: './pesquisa-categoria.component.html',
+  styleUrls: ['./pesquisa-categoria.component.css']
 })
+export class PesquisaCategoriaComponent implements OnInit {
 
-export class CadastroProdutoCategoriaComponent implements OnInit {
   produto: Produto = new Produto()
   listaProdutos: Produto[]
 
   categoria: Categoria = new Categoria()
   listaCategorias: Categoria[]
   idCategoria: number
+
+  
 
   constructor(
 
@@ -34,15 +35,13 @@ export class CadastroProdutoCategoriaComponent implements OnInit {
 
   ngOnInit() {
     window.scroll(0, 0)
-
     let id: number = this.route.snapshot.params["id"]
-    this.findAllCategorias()
-    this.findAllProdutos()
+    this.findByIdCategoria()
   }
 
   cadastrar() {
     if (this.categoria.nome == null) {
-      this.alert.showAlertInfo('Preencha o campo "Nome" corretamente')
+      this.alert.showAlertInfo('Preencha o campo "Descrição" corretamente')
     } else {
       this.categoriaService.postCategoria(this.categoria).subscribe((resp: any = Categoria) => {
         this.categoria = resp
@@ -59,9 +58,11 @@ export class CadastroProdutoCategoriaComponent implements OnInit {
       console.log("Lista de categorias" + JSON.stringify(this.listaCategorias))
     })
   }
+  
   findByIdCategoria() {
-    this.categoriaService.getByIdCategoria(this.categoria.id).subscribe((resp: any = Categoria) => {
+    this.categoriaService.getByIdCategoria(this.route.snapshot.params["id"]).subscribe((resp: any = Categoria) => {
       this.categoria = resp;
+
     })
   }
 
