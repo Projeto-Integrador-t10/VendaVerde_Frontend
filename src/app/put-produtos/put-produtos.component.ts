@@ -30,6 +30,7 @@ export class PutProdutosComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    window.scroll(0,0)
     this.idProd = this.route.snapshot.params["id"]
     this.findAllCategorias()
     this.findByIdProduto(this.idProd)

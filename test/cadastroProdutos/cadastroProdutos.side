@@ -180,6 +180,18 @@
       "targets": [],
       "value": "9087"
     }, {
+      "id": "f770af2e-f8a6-4bce-b016-b5ef30705324",
+      "comment": "",
+      "command": "click",
+      "target": "id=estoque",
+      "targets": [
+        ["id=estoque", "id"],
+        ["css=#estoque", "css:finder"],
+        ["xpath=//input[@id='estoque']", "xpath:attributes"],
+        ["xpath=//div[9]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
       "id": "ec718bdd-68d8-4574-b837-95138a675560",
       "comment": "",
       "command": "click",
@@ -199,7 +211,7 @@
       "command": "select",
       "target": "id=escolha de categoria",
       "targets": [],
-      "value": "label=frutas"
+      "value": "label=Frutas"
     }, {
       "id": "ef950d95-a53c-4077-804a-a75b511a1b9c",
       "comment": "",
@@ -234,18 +246,6 @@
       "targets": [
         ["css=.modal", "css:finder"],
         ["xpath=//modal-container", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "155135b2-1699-4cb7-8a95-1c69a5703a10",
-      "comment": "",
-      "command": "click",
-      "target": "id=estoque",
-      "targets": [
-        ["id=estoque", "id"],
-        ["css=#estoque", "css:finder"],
-        ["xpath=//input[@id='estoque']", "xpath:attributes"],
-        ["xpath=//div[9]/input", "xpath:position"]
       ],
       "value": ""
     }]
@@ -457,7 +457,7 @@
       "command": "select",
       "target": "id=escolha de categoria",
       "targets": [],
-      "value": "label=frutas"
+      "value": "label=Frutas"
     }, {
       "id": "54fea945-415a-40e5-aeda-0b76304b8e34",
       "comment": "",
@@ -488,7 +488,7 @@
       "id": "acbc2d5d-a117-4acf-9473-f1a8c285288c",
       "comment": "",
       "command": "click",
-      "target": "css=.form-group:nth-child(9)",
+      "target": "css=.modal",
       "targets": [
         ["css=.form-group:nth-child(9)", "css:finder"],
         ["xpath=//div[7]", "xpath:position"]
@@ -703,7 +703,7 @@
       "command": "select",
       "target": "id=escolha de categoria",
       "targets": [],
-      "value": "label=frutas"
+      "value": "label=Frutas"
     }, {
       "id": "9169ae98-1554-4249-b041-20aa4405929f",
       "comment": "",
@@ -935,7 +935,7 @@
       "command": "select",
       "target": "id=escolha de categoria",
       "targets": [],
-      "value": "label=frutas"
+      "value": "label=Frutas"
     }, {
       "id": "6cb6ac9b-6e96-43ff-9717-99608b1fb1c2",
       "comment": "",
@@ -1181,7 +1181,7 @@
       "command": "select",
       "target": "id=escolha de categoria",
       "targets": [],
-      "value": "label=frutas"
+      "value": "label=Frutas"
     }, {
       "id": "d782ba53-6419-4f02-b071-27aa32e42216",
       "comment": "",
@@ -1226,7 +1226,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["2b6ec58a-9f88-49ff-8143-ac478a51dc09"]
+    "tests": ["2b6ec58a-9f88-49ff-8143-ac478a51dc09", "aa68cf48-5e06-4ea7-8fa1-ba40bf3ffe40", "8d5a6d7b-3cb3-4684-a83d-0b38e26202a0", "a19e4aae-5695-4b1b-8443-5ed60f85b5db", "34e030b3-7a41-4b5d-921f-6e6020e094d2"]
   }],
   "urls": ["http://localhost:4200/", "http://localhost:4200/cadastro-produto"],
   "plugins": []

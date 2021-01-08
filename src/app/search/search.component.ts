@@ -41,7 +41,7 @@ export class SearchComponent implements OnInit {
     } else{
       this.produtoService.getByNameProduto(this.nome).subscribe((resp: Produto[])=>{
         this.listaProdutos = resp
-        if(this.listaProdutos.length > 4){
+        if(this.listaProdutos.length > 5){
                   this.esconder = false
         }else{
           this.esconder = true

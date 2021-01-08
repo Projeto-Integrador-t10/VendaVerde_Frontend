@@ -180,7 +180,7 @@
       "targets": [],
       "value": "9087"
     }, {
-      "id": "155135b2-1699-4cb7-8a95-1c69a5703a10",
+      "id": "f770af2e-f8a6-4bce-b016-b5ef30705324",
       "comment": "",
       "command": "click",
       "target": "id=estoque",
@@ -192,7 +192,7 @@
       ],
       "value": ""
     }, {
-      "id": "98842b03-158d-406e-aac4-7756f30fd3c0",
+      "id": "ec718bdd-68d8-4574-b837-95138a675560",
       "comment": "",
       "command": "click",
       "target": "id=escolha de categoria",
@@ -206,14 +206,14 @@
       ],
       "value": ""
     }, {
-      "id": "5bb1d80b-7ee5-4797-9492-50bd388188d6",
+      "id": "ef24ee31-e172-49e7-92d4-28a3acc77e49",
       "comment": "",
       "command": "select",
       "target": "id=escolha de categoria",
       "targets": [],
-      "value": "label=frutas"
+      "value": "label=Frutas"
     }, {
-      "id": "c5388576-3ecb-420b-b55b-cc795367cf38",
+      "id": "ef950d95-a53c-4077-804a-a75b511a1b9c",
       "comment": "",
       "command": "click",
       "target": "id=escolha de categoria",
@@ -227,7 +227,7 @@
       ],
       "value": ""
     }, {
-      "id": "fd4ad3b4-c6fd-430a-bab0-ec19b9f95a84",
+      "id": "c81b00aa-25e5-4989-aba2-03c7f5db9180",
       "comment": "",
       "command": "click",
       "target": "css=.form-group:nth-child(13) > .btn",
@@ -239,13 +239,13 @@
       ],
       "value": ""
     }, {
-      "id": "532d1b5b-a35c-45fd-ac7d-06094cbcc20f",
+      "id": "5ccb9951-0e75-479b-8787-e6d6ce8c6cb2",
       "comment": "",
       "command": "click",
-      "target": "css=app-cadastro-produto-categoria > .container:nth-child(1)",
+      "target": "css=.modal",
       "targets": [
-        ["css=app-cadastro-produto-categoria > .container:nth-child(1)", "css:finder"],
-        ["xpath=//app-cadastro-produto-categoria/div", "xpath:position"]
+        ["css=.modal", "css:finder"],
+        ["xpath=//modal-container", "xpath:position"]
       ],
       "value": ""
     }]
@@ -457,7 +457,7 @@
       "command": "select",
       "target": "id=escolha de categoria",
       "targets": [],
-      "value": "label=frutas"
+      "value": "label=Frutas"
     }, {
       "id": "54fea945-415a-40e5-aeda-0b76304b8e34",
       "comment": "",
@@ -488,7 +488,7 @@
       "id": "acbc2d5d-a117-4acf-9473-f1a8c285288c",
       "comment": "",
       "command": "click",
-      "target": "css=.form-group:nth-child(9)",
+      "target": "css=.modal",
       "targets": [
         ["css=.form-group:nth-child(9)", "css:finder"],
         ["xpath=//div[7]", "xpath:position"]
@@ -703,7 +703,7 @@
       "command": "select",
       "target": "id=escolha de categoria",
       "targets": [],
-      "value": "label=frutas"
+      "value": "label=Frutas"
     }, {
       "id": "9169ae98-1554-4249-b041-20aa4405929f",
       "comment": "",
@@ -935,7 +935,7 @@
       "command": "select",
       "target": "id=escolha de categoria",
       "targets": [],
-      "value": "label=frutas"
+      "value": "label=Frutas"
     }, {
       "id": "6cb6ac9b-6e96-43ff-9717-99608b1fb1c2",
       "comment": "",
@@ -1181,7 +1181,7 @@
       "command": "select",
       "target": "id=escolha de categoria",
       "targets": [],
-      "value": "label=frutas"
+      "value": "label=Frutas"
     }, {
       "id": "d782ba53-6419-4f02-b071-27aa32e42216",
       "comment": "",

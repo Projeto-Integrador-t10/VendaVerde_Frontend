@@ -5,7 +5,7 @@
     vendaverde
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Link para o Home">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -14,33 +14,33 @@
       <ul class="navbar-nav text-right">
 
         <li class="nav-item ml-3">
-          <a class="nav-link p-3" routerLink='/home'>Home<span class="sr-only"></span></a>
+          <a class="nav-link p-3" aria-label="Link para página Home" routerLink='/home'>Home<span class="sr-only"></span></a>
         </li>
         <li class="nav-item ml-3">
-          <a class="nav-link p-3" routerLink='/sobre'>Sobre</a>
+          <a class="nav-link p-3" aria-label="Link para página Sobre" routerLink='/sobre'>Sobre</a>
         </li>
-
+       
         <div *ngIf='auth.btnLogin()'>
           <li class="nav-item ml-3">
-            <a class="nav-link p-3" routerLink='/login'>Entrar</a>
+            <a class="nav-link p-3" aria-label="Link para página de Login" routerLink='/login'>Entrar</a>
           </li>
         </div>
 
         <div *ngIf='auth.btnLogin()'>
           <li class="nav-item ml-3">
-            <a class="nav-link p-3" routerLink='/cadastro'>Cadastrar</a>
+            <a class="nav-link p-3" aria-label="Link para página de Cadastro de Usuário" routerLink='/cadastro'>Cadastrar</a>
+          </li>
+        </div>
+      
+        <div *ngIf='auth.btnSair()'>
+          <li class="nav-item ml-3">
+            <a class="nav-link p-3" aria-label="Link para cadastrar um produto/categoria" routerLink='/cadastro-produto'>Cadastrar produto</a>
           </li>
         </div>
 
         <div *ngIf='auth.btnSair()'>
           <li class="nav-item ml-3">
-            <a class="nav-link p-3" routerLink='/cadastro-produto'>Cadastrar produto</a>
-          </li>
-        </div>
-
-        <div *ngIf='auth.btnSair()'>
-          <li class="nav-item ml-3">
-            <a class="nav-link p-3" (click)='sair()'>sair</a>
+            <a class="nav-link p-3" aria-label="Link para página sair" (click)='sair()'>sair</a>
           </li>
         </div>
       </ul>

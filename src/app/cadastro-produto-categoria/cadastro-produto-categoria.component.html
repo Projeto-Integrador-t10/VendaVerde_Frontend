@@ -95,6 +95,8 @@
                     <th scope="col">Quantidade</th>
                     <th scope="col">Preço</th>
                     <th scope="col">Categoria</th>
+                    <th></th>
+                    
                 </tr>
             </thead>
             <tbody *ngFor='let produto of listaProdutos'>
@@ -137,12 +139,12 @@
 
                     <th scope="col">id</th>
                     <th scope="col">Nome da categoria</th>
-
+                    <th></th>                    
                 </tr>
             </thead>
             <tbody *ngFor='let categoria of listaCategorias'>
                 <tr>
-                    <th>{{categoria.id}}</th>
+                    <td>{{categoria.id}}</td>
                     <td>{{categoria.nome}}</td>
 
                     <div class="d-flex justify-content-end" ><!-- *ngIf='auth.userAdmin()' -->

@@ -4,6 +4,7 @@ import { Produto } from '../model/Produto';
 import { AlertasService } from '../service/alertas.service';
 import { AuthService } from '../service/auth.service';
 import { ProdutoService } from '../service/produto.service';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-product',
@@ -12,6 +13,9 @@ import { ProdutoService } from '../service/produto.service';
 })
 
 export class ProductComponent implements OnInit {
+
+  faShoppingCart = faShoppingCart
+  
   produto:Produto = new Produto()
 
   prodId:number

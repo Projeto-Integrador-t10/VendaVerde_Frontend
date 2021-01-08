@@ -1,11 +1,12 @@
+
 .slideImg {
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
-    object-fit: cover;
 }
 
 .img {
     height: 100%;
+    width: 200%;
     object-fit: cover;
 }
 

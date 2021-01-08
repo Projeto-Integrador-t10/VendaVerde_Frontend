@@ -1,10 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment.prod';
 import { Usuario } from '../model/Usuario';
 import { UsuarioLogin } from '../model/UsuarioLogin';
-
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +11,10 @@ import { UsuarioLogin } from '../model/UsuarioLogin';
 
 export class AuthService {
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    private router: Router,    
+  ) { }
 
   logar(usuarioLogin: UsuarioLogin) : Observable<UsuarioLogin> {
 
@@ -23,7 +25,6 @@ export class AuthService {
     return this.http.post<Usuario>('http://localhost:9000/usuarios/cadastrar', usuario)
 
   }
-
   btnSair(){
     let ok = false
     let token = localStorage.getItem('token')
@@ -37,11 +38,10 @@ export class AuthService {
 
     if(token == null){ok = true} return ok
   }
-
-  userAdmin(){
-    let ok = false
-    let admin = environment.admin
-
-    if(admin == true){ok = true}else{ok = false} return ok
+  
+  footer(){
+    let ok: boolean = true
+    if(this.router.url == '/login' || this.router.url == '/cadastro'){ok = false}
+    return ok
   }
 }

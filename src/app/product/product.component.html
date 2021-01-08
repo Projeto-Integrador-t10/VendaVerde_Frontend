@@ -1,6 +1,7 @@
-<div class="container my-5 pb-5">
+<div class=" py-3">
+  <div class="produtobg container p-5 mb-5" >
 
-  <div class="row m-3 d-flex">
+  <div class=" row m-3 d-flex ">
     <div class="col-md-8">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -8,7 +9,7 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
-        <div class="carousel-inner rounded">
+        <div class="carousel-inner border rounded">
           <div class="carousel-item active slideImg">
             <img class="d-block w-100 img" src="{{produto.imag1}}" alt="Primeiro Slide">
           </div>
@@ -29,14 +30,28 @@
         </a>
       </div>
     </div>
-    <div class="col-md-4 mt-3">
-      <h1>{{produto.nome}}</h1>     
+    <div class="col-md-4 text-dark wh-100 d-flex flex-column justify-content-between">
 
-                  <h5>{{produto.preco | currency:'BRL'}}</h5>
-                  <p>{{produto.descricao}}</p>
-                  <button class="btn btn-outline-success m-1" (click)='compra()'>comprar</button>
-                  <button class="btn btn-outline-success m-1" (click)='carrinho()'>Adicionar ao carrinho</button>
-                  <button class="btn btn-outline-success m-1" (click)='doar()'>doar</button>
-           </div>
+      <div>
+        <h1 class="text-dark">{{produto.nome}}</h1>
+
+        <h5 class="text-dark">{{produto.preco | currency:'BRL'}}</h5>
+        <p class="text-dark">{{produto.descricao}}</p>
+      </div>
+
+
+
+      <div class="d-flex flex-column justify-content-between">
+        <button class="btn colorbtn m-1 d-flex align-items-center justify-content-center" aria-label="Botão para adicionar o produto ao carrinho"
+        (click)='carrinho()'>
+        <fa-icon [icon]="faShoppingCart" class="faShoppingCart"></fa-icon>
+        Adicionar ao carrinho
+      </button>
+      <button class="btn btn-outline colorbtn m-1" style="border-color: #286090; color: #286090 " aria-label="Botão para doar o produto à alguma ONG"
+        (click)='doar()'>Doar</button>
+        <button class="btn btn-success m-1 botao colorcompra" aria-label="Botão para comprar o produto"
+          (click)='compra()'>Comprar</button>
+      </div>
     </div>
+  </div>
 </div>

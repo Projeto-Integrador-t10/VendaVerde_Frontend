@@ -2,11 +2,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap');
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Averia Serif Libre', cursive;   
+  font-family: 'Averia Serif Libre', cursive;
+  color: #182C2D!important;
 }
 
 body {
   background-color: #f7f1d770!important;
   overflow-y:scroll;
   font-size: 20px!important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.btn-success {
+  background-color: #49B577;
 }
