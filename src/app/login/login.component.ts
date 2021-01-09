@@ -5,6 +5,7 @@ import { Usuario } from '../model/Usuario';
 import {UsuarioLogin} from '../model/UsuarioLogin'
 import { AlertasService } from '../service/alertas.service';
 import { AuthService } from '../service/auth.service';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-login',
@@ -13,6 +14,8 @@ import { AuthService } from '../service/auth.service';
 })
 
 export class LoginComponent implements OnInit {
+
+  faHome = faHome
 
   usuarioLogin: UsuarioLogin = new UsuarioLogin()
   usuario: Usuario = new Usuario()

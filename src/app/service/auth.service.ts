@@ -44,4 +44,11 @@ export class AuthService {
     if(this.router.url == '/login' || this.router.url == '/cadastro'){ok = false}
     return ok
   }
+
+  navbar(){
+    let ok: boolean = true
+    if(this.router.url == '/login' || this.router.url == '/cadastro'){ok = false}
+    return ok
+  }
+
 }

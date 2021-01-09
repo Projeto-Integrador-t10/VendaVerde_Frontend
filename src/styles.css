@@ -7,9 +7,29 @@ h1, h2, h3, h4, h5 {
 }
 
 body {
-  background-color: #f7f1d770!important;
+  background-color: #FFFEF8!important;
   overflow-y:scroll;
   font-size: 20px!important;
+}
+
+.btnlink {
+  color: #49B577;
+}
+
+.btnlink:hover {
+  background-color: #49B57717;
+  color: #49B577;
+  transition: 0.4s;
+}
+
+.btnPrimary {
+  background-color: #49B577;
+  color: #fff;
+}
+
+.btnPrimary:hover {
+  background-color: #3b9261;
+  transition: 0.4s;
 }
 
 /* width */

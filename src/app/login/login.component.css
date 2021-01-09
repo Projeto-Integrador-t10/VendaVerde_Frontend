@@ -1,17 +1,23 @@
+@import '../../styles.css';
 
 .slideImg {
-    height: 70vh;
+    height: 100vh;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .img {
     height: 100%;
-    width: 200%;
+    width: 100%;
     object-fit: cover;
 }
 
 @media(max-width: 768px) {
     .slideImg {
         display: none;
+    }
+
+    .w-75 {
+        width: 100%!important;
     }
 }
