@@ -1,3 +1,5 @@
+@import '../../styles.css';
+
 .check-input{   
     border: none !important; 
 }
@@ -16,5 +18,9 @@
 @media(max-width: 768px) {
     .slideImg {
         display: none;
+    }
+
+    .w-75 {
+        width: 100%!important;
     }
 }

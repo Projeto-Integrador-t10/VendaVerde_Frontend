@@ -1,39 +1,53 @@
-<div class="container-fluid">
+<div class="container-fluid ">
 
   <div class="row h-auto">
     <div class="col-md-6 pl-0 slideImg">
-      <img src="../../assets/img/produto/plantacao2.jpg" alt= "Imagem de uma plantação de alfaces" class="img-fluid img">
+      <img src="../../assets/img/produto/plantacao2.jpg" alt="Imagem de uma plantação de alfaces" class="img-fluid img">
     </div>
-    <div class="col-md-6 p-5 d-flex flex-column justify-content-center align-items-center">
-      <h1 class="m-3 w-100">Cadastrar</h1>
-      <div class="w-100">
-        <div>
-          <div class="form-group">
-            <label for="nome">Nome</label>
-            <input type="text" class="form-control" id="nome" name="nome" aria-label="Área para digitar seu nome" placeholder="Seu nome"
-              [(ngModel)]='usuario.nome'>
-          </div>
+    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center py-5">
+      <div class="w-75">
+        <button class="btn btnlink mb-3 pl-0 d-flex align-items-center justify-content-center" routerLink='/home' alt="Botão voltar para a home do site">
+          <fa-icon [icon]="faHome" class="faHome fa-2x mr-2"></fa-icon>
+          <p class="p-0 m-0">Voltar para a Home</p> 
+        </button>
+        <h1 class="w-100">Cadastrar</h1>
+        <div class="w-100">
+          <div>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control" id="nome" name="nome" aria-label="Área para digitar seu nome"
+                placeholder="Seu nome" [(ngModel)]='usuario.nome'>
+            </div>
 
-          <div class="form-group">
-            <label for="usuario">Nome de usuário</label>
-            <input type="text" class="form-control" id="usuario" aria-label="Área para digitar seu endereço de e-mail" name="usuario" placeholder="Seu e-mail"
-              [(ngModel)]='usuario.usuario'>
-          </div>
+            <div class="form-group">
+              <label for="usuario">Nome de usuário</label>
+              <input type="text" class="form-control" id="usuario" aria-label="Área para digitar seu endereço de e-mail"
+                name="usuario" placeholder="Seu e-mail" [(ngModel)]='usuario.usuario'>
+            </div>
 
-          <div class="form-group">
-            <label for="senha">Senha</label>
-            <input type="password" class="form-control" id="senha" name="senha" placeholder="Sua senha" aria-label="Área para digitar sua senha"
-              (input)='conferirSenha($event)' value='{{senha}}'>
-          </div>
+            <div class="form-group">
+              <label for="senha">Senha</label>
+              <input type="password" class="form-control" id="senha" name="senha" placeholder="Sua senha"
+                aria-label="Área para digitar sua senha" (input)='conferirSenha($event)' value='{{senha}}'>
+            </div>
 
-          <div class="form-group">
-            <label for="senhaConf">Confirmar Senha</label>
-            <input type="password" class="form-control" id="senhaConf" name="senhaConf" placeholder="Repita sua senha" aria-label="Área para confirmar sua senha"
-              [(ngModel)]='usuario.senha'>
+            <div class="form-group">
+              <label for="senhaConf">Confirmar Senha</label>
+              <input type="password" class="form-control" id="senhaConf" name="senhaConf" placeholder="Repita sua senha"
+                aria-label="Área para confirmar sua senha" [(ngModel)]='usuario.senha'>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <p class="py-2 m-0"><small>Já tem cadastro?</small>
+                <button class="btn btn-link btnlink ml-2" routerLink='/login' aria-label="Botão para ir a página de acesso">
+                  <strong>Entrar</strong>
+                </button>
+              </p>
+              <button aria-label="Botão de confirmar cadastro" class="btn btnPrimary" (click)='cadastrar()'>Cadastrar</button>
+
+            </div>
           </div>
-         
-          <button  aria-label="Botão de confirmar cadastro" class="btn btn-info" style="color:cornsilk;" style=" background-color: #286090; border-color: #286090;"  (click)='cadastrar()'>Cadastrar</button>
         </div>
+
       </div>
     </div>
   </div>

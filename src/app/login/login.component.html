@@ -1,30 +1,41 @@
-<div class="container-fluid ">
-    <div class="row ">
-        <div class="col-md-6 slideImg w-100">
+<div class="container-fluid">
+    <div class="row w-80">
+        <div class="col-md-6 slideImg p-0">
             <img src="../../assets/img/mascote.svg" class="img-fluid img">
         </div>
-        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
-            <div class="form-group m-2 w-100 mx-5">
-                <h1 class="mb-3">Login</h1>
+        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center py-5">
+            <div class="w-75">
+                <div class="form-group">
+                    <button class="btn btnlink mb-3 pl-0 d-flex align-items-center justify-content-center" routerLink='/home' alt="Botão voltar para a home do site">
+                        <fa-icon [icon]="faHome" class="faHome fa-2x mr-2"></fa-icon>
+                        <p class="p-0 m-0">Voltar para a Home</p> 
+                      </button>
+                    <h1 class="mb-3">Login</h1>
+                    
+                    <label for="exampleInputEmail1">Endereço de email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="Área para e-mail"
+                        placeholder="Seu e-mail" [(ngModel)]='usuarioLogin.usuario'>
+                    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com
+                        ninguém.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" aria-label="Área para digitar senha de acesso" placeholder="Sua senha"
+                        [(ngModel)]='usuarioLogin.senha'>
+                    
+                    <input type="checkbox" aria-label="Checkbox for following text input"><small> Lembre de mim</small>
+                </div>
                 
-                <label for="exampleInputEmail1">Endereço de email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="Área para e-mail"
-                    placeholder="Seu e-mail" [(ngModel)]='usuarioLogin.usuario'>
-                <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com
-                    ninguém.</small>
+                <div class="d-flex justify-content-between align-items-center">
+                    <p class="py-2 m-0"><small>Ainda não tem cadastro?</small>
+                        <button class="btn btn-link btnlink  ml-2" routerLink='/cadastro' aria-label="Botão para cadastrar">
+                            <strong>Cadastre-se</strong>
+                        </button>
+                    </p>
+                    <button type="submit" class="btn btnPrimary" aria-label="Botão para logar" (click)='entrar()'>Entrar</button>
+                </div>
+
             </div>
-            <div class="form-group m-2 w-100 mx-5">
-                <label for="exampleInputPassword1">Senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" aria-label="Área para digitar senha de acesso" placeholder="Sua senha"
-                    [(ngModel)]='usuarioLogin.senha'>
-                
-                <input type="checkbox" aria-label="Checkbox for following text input"><small> Lembre de mim</small>
-            </div>
-            
-            <div class=" mx-5 m-2 w-100">
-                <button type="submit" class="btn btn-info" style="color:cornsilk;" style=" background-color: #286090; border-color: #286090;" aria-label="Botão para logar" (click)='entrar()'>Entrar</button>
-            </div>
-            
 
         </div>
     </div>
