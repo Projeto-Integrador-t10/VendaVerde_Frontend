@@ -1,6 +1,9 @@
 <app-search></app-search>
 <section class="w-100 fundo">    
     <div class="container">
+        <div class="w-100 py-5 w-100 text-center">
+            <h1 class="text-white">Resultado da busca</h1>
+        </div>
       <div class="row  row-cols-md-5 ">
         <div class="col mb-2" *ngFor="let item of listaProdutos">
             <a [routerLink]='["/prod", item.id]' class="produto">

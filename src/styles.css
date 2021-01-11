@@ -32,6 +32,18 @@ body {
   transition: 0.4s;
 }
 
+.btnPrimaryOutline {
+  background-color: #fff;
+  color: #49B577; 
+  color: #49B577; 
+}
+
+.btnPrimaryOutline:hover {
+  background-color: #49B577;
+  color: #fff;
+  transition: 0.4s;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
