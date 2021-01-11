@@ -8,6 +8,6 @@ a:hover{
     color:#182C2D!important;   
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: 0.3s;
 }

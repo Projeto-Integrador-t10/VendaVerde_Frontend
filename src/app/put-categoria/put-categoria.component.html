@@ -2,19 +2,22 @@
     <div class="row mt-5 mb-5">
         
         <div class="col-md-12">
-
             <div>
                 <div class="form-group">
                     <label for="titulo">Nome da categoria:</label>
                     <input type="text" class="form-control" id="titulo" placeholder="Digite aqui o nome" aria-label="Área para digitar o nome da categoria" [(ngModel)] = "categoria.nome">
                 </div>
                 <div class="form-group">
-                    <label for="titulo">Imagem da categoria:</label>
-                    <input type="text" class="form-control" id="titulo" placeholder="Insira aqui a URL da imagem" aria-label="Área para colar a URL com a imagem da categoria" [(ngModel)] = "categoria.img">
+                    <label for="imagem">Imagem da categoria:</label>
+                    <input type="text" class="form-control" id="imagem" placeholder="Insira aqui a URL da imagem" aria-label="Área para colar a URL com a imagem da categoria" [(ngModel)] = "categoria.img">
                 </div>
-
-                <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-info w-25" style=" background-color: #286090; border-color: #286090;" aria-label="Botão para salvar as mudanças realizadas" (click)="salvar()">Salvar</button>
+                <div [hidden]="this.aparece">
+                    <p class="text-center text-danger">
+                        Existem produtos relacionados a essa categoria, edita-la pode lhe trazer problemas!.
+                    </p>
+                </div>
+                <div class="d-flex justify-content-end" >
+                    <button [hidden]="this.desaparece" type="button" class="btn btn-info w-25" style=" background-color: #286090; border-color: #286090;" aria-label="Botão para salvar as mudanças realizadas" (click)="salvar()">Salvar</button>
                 </div>
             </div>
         </div>

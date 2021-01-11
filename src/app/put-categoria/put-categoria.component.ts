@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Categoria } from '../model/Categoria';
+import { Produto } from '../model/Produto';
 import { AlertasService } from '../service/alertas.service';
 import { CategoriaService } from '../service/categoria.service';
+import { ProdutoService } from '../service/produto.service';
 
 @Component({
   selector: 'app-put-categoria',
@@ -11,11 +13,16 @@ import { CategoriaService } from '../service/categoria.service';
 })
 export class PutCategoriaComponent implements OnInit {
 
+  aparece: boolean = true
+  desaparece: boolean = true
+  produto: Produto = new Produto
+  listaProdutos: Produto[]
   categoria: Categoria = new Categoria()
   listaCategorias: Categoria[]
   idCategoria: number
 
   constructor(
+    private produtoService: ProdutoService,
     private categoriaService: CategoriaService,
     private router: Router,
     private route: ActivatedRoute,
@@ -27,11 +34,16 @@ export class PutCategoriaComponent implements OnInit {
 
     let id: number = this.route.snapshot.params["id"]
     this.findByIdCategoria(id)
-  }
+
+  } 
 
   findByIdCategoria (id: number) {
     this.categoriaService.getByIdCategoria(id).subscribe((resp: any = Categoria) => {
       this.categoria = resp;
+    if(this.categoria.produto.length > 0){
+        this.aparece = false
+        this.desaparece = true
+      }
     })
   }
 
@@ -45,6 +57,18 @@ export class PutCategoriaComponent implements OnInit {
         this.alert.showAlertDanger("Categoria relacionada, não é possível edita-la!")
         this.router.navigate(["/cadastro-produto"])
       }
+    })
+  }
+  findAllCategorias() {
+    this.categoriaService.getAllCategorias().subscribe((resp: Categoria[]) => {
+      this.listaCategorias = resp
+      console.log("Lista de categorias" + JSON.stringify(this.listaCategorias))
+    })
+  }
+  findAllProdutos() {
+    this.produtoService.getAllProdutos().subscribe((resp: Produto[]) => {
+      this.listaProdutos = resp
+      console.log(this.listaProdutos)
     })
   }
 }
