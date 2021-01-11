@@ -31,6 +31,12 @@
             <a class="nav-link p-3" aria-label="Link para página de Cadastro de Usuário" routerLink='/cadastro'>Cadastrar</a>
           </li>
         </div>
+
+        <div *ngIf='auth.btnSair()'>
+          <li class="nav-item ml-3">
+            <a class="nav-link p-3" aria-label="Link para cadastrar um produto/categoria" routerLink='/lista-produtos'>Lista de produtos</a>
+          </li>
+        </div>
       
         <div *ngIf='auth.btnSair()'>
           <li class="nav-item ml-3">

@@ -1,5 +1,4 @@
 <div class="container my-5">
-
     <div class="container my-3 px-0"> <!--  *ngIf='auth.userAdmin()' -->
 
         <h2 class="my-5">Cadastre uma categoria</h2>
@@ -89,7 +88,7 @@
     <div class="scrollbar">
         <table class="table table-striped">
             <thead>
-                <tr class="text-center">
+                <tr class="">
                     <th scope="col">id</th>
                     <th scope="col">Nome do produto</th>
                     <th scope="col">Quantidade</th>
@@ -100,7 +99,7 @@
                 </tr>
             </thead>
             <tbody *ngFor='let produto of listaProdutos'>
-                <tr class="text-center">
+                <tr class="">
                     <th>{{produto.id}}</th>
                     <td>{{produto.nome}}</td>
                     <td>{{produto.quantidade}}</td>
