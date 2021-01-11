@@ -56,7 +56,7 @@ export class CadastroProdutoCategoriaComponent implements OnInit {
   findAllCategorias() {
     this.categoriaService.getAllCategorias().subscribe((resp: Categoria[]) => {
       this.listaCategorias = resp
-      console.log("Lista de categorias" + JSON.stringify(this.listaCategorias))
+      /* console.log("Lista de categorias" + JSON.stringify(this.listaCategorias)) */
     })
   }
   findByIdCategoria() {
@@ -84,7 +84,7 @@ export class CadastroProdutoCategoriaComponent implements OnInit {
   findAllProdutos() {
     this.produtoService.getAllProdutos().subscribe((resp: Produto[]) => {
       this.listaProdutos = resp
-      console.log(this.listaProdutos)
+      /* console.log(this.listaProdutos) */
     })
   }
 

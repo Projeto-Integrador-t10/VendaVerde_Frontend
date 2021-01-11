@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
       this.usuarioLogin = resp
       localStorage.setItem('token', this.usuarioLogin.token)
       environment.admin = this.usuarioLogin.admin
-      this.router.navigate(['/home'])      
+      this.router.navigate(['/cadastro-produto'])      
     }, err =>{
       if(err.status == 500){
         this.alert.showAlertDanger("Usuário/Senha não confere!!")

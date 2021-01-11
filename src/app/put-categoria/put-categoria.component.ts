@@ -30,14 +30,14 @@ export class PutCategoriaComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    window.scroll(0,0)
+    window.scroll(0, 0)
 
     let id: number = this.route.snapshot.params["id"]
     this.findByIdCategoria(id)
 
   } 
 
-  findByIdCategoria (id: number) {
+  findByIdCategoria(id: number) {
     this.categoriaService.getByIdCategoria(id).subscribe((resp: any = Categoria) => {
       this.categoria = resp;
     if(this.categoria.produto.length > 0){
@@ -50,10 +50,11 @@ export class PutCategoriaComponent implements OnInit {
   salvar() {
     this.categoriaService.putCategoria(this.categoria).subscribe((resp: any = Categoria) => {
       this.categoria = resp
+      console.log('log json categoria: ',this.categoria)
       this.router.navigate(['/cadastro-produto'])
       this.alert.showAlertSuccess('Categoria atualizada com sucesso!')
-    }, err=> {
-      if(err.status=400){
+    }, err => {
+      if (err.status = 400) {
         this.alert.showAlertDanger("Categoria relacionada, não é possível edita-la!")
         this.router.navigate(["/cadastro-produto"])
       }

@@ -1,7 +1,20 @@
+@import '../../styles.css';
+
 .slideImg {
     height: 70vh;
     overflow: hidden;
     object-fit: cover;
+}
+
+@media(max-width: 768px) {
+    .slideImg {
+        height: 40vh;
+    }
+
+    .produtobg {
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0);
+    }
+
 }
 
 .img {
@@ -10,7 +23,6 @@
 }
 .fundo{
     background-color: #182c2d !important;
-    
 }
 
 .produtobg {
