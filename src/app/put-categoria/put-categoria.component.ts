@@ -14,7 +14,7 @@ import { ProdutoService } from '../service/produto.service';
 export class PutCategoriaComponent implements OnInit {
 
   aparece: boolean = true
-  desaparece: boolean = true
+  desaparece: boolean = false
   produto: Produto = new Produto
   listaProdutos: Produto[]
   categoria: Categoria = new Categoria()

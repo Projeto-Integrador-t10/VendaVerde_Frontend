@@ -27,7 +27,7 @@ export class CategoriaService {
   }
 
   putCategoria(categoria: Categoria) : Observable<Categoria> {
-    return this.http.put<Categoria>('http://oivendaverde.herokuapp.com/categoria', categoria, this.token)
+    return this.http.put<Categoria>('https://oivendaverde.herokuapp.com/categoria', categoria, this.token)
   }
 
   deleteCategoria(id: number){

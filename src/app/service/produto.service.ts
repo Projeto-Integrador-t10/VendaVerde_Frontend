@@ -33,7 +33,7 @@ export class ProdutoService {
   }
 
   postProduto(produto: Produto) : Observable<Produto[]> {
-    return this.http.post<Produto[]>('http://oivendaverde.herokuapp.com/produtos', produto, this.token)
+    return this.http.post<Produto[]>('https://oivendaverde.herokuapp.com/produtos', produto, this.token)
   }
 
   putProduto(produto: Produto) : Observable<Produto>{
