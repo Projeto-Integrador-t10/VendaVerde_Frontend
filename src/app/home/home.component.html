@@ -68,7 +68,7 @@
             <h1 class="">Produtos em destaque</h1>
         </div>
         <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5">
-            <div class="col mb-2 " *ngFor="let item of listaProdutos ">
+            <div class="col mb-2 " *ngFor="let item of listaProdutos | slice:0:15 ; let i=index ">
                 <a [routerLink]='["/prod", item.id]' class="produto">
                     <div class="card border border-success text-dark hover-focus prod">
                         <div class="cardImg">
