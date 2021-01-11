@@ -14,12 +14,13 @@
       <ul class="navbar-nav text-right">
 
         <li class="nav-item ml-3">
-          <a class="nav-link p-3" aria-label="Link para página Home" routerLink='/home'>Home<span class="sr-only"></span></a>
+          <a class="nav-link p-3" aria-label="Link para página Home" routerLink='/home'>Home<span
+              class="sr-only"></span></a>
         </li>
         <li class="nav-item ml-3">
           <a class="nav-link p-3" aria-label="Link para página Sobre" routerLink='/sobre'>Sobre</a>
         </li>
-       
+
         <div *ngIf='auth.btnLogin()'>
           <li class="nav-item ml-3">
             <a class="nav-link p-3" aria-label="Link para página de Login" routerLink='/login'>Entrar</a>
@@ -28,7 +29,8 @@
 
         <div *ngIf='auth.btnLogin()'>
           <li class="nav-item ml-3">
-            <a class="nav-link p-3" aria-label="Link para página de Cadastro de Usuário" routerLink='/cadastro'>Cadastrar</a>
+            <a class="nav-link p-3" aria-label="Link para página de Cadastro de Usuário"
+              routerLink='/cadastro'>Cadastrar</a>
           </li>
         </div>
 
@@ -37,17 +39,17 @@
             <a class="nav-link p-3" aria-label="Link para cadastrar um produto/categoria" routerLink='/lista-produtos'>Lista de produtos</a>
           </li>
         </div>
-      
+
         <div *ngIf='auth.btnSair()'>
           <li class="nav-item ml-3">
-            <a class="nav-link p-3" aria-label="Link para cadastrar um produto/categoria" routerLink='/cadastro-produto'>Cadastrar produto</a>
+            <a class="nav-link p-3" aria-label="Link para cadastrar um produto/categoria"
+              routerLink='/cadastro-produto'>Cadastrar produto</a>
           </li>
         </div>
 
         <div *ngIf='auth.btnSair()'>
-          <li class="nav-item ml-3">
-            <a class="nav-link p-3" aria-label="Link para página sair" (click)='sair()'>sair</a>
-          </li>
+          <a class="nav-link p-3" aria-label="Link para página sair" (click)='sair()'>
+            sair </a>
         </div>
       </ul>
     </div>
