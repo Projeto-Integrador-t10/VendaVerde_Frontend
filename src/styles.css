@@ -34,7 +34,7 @@ body {
 
 .btnPrimaryOutline {
   background-color: #fff;
-  color: #49B577; 
+  border: solid 1px #49B577; 
   color: #49B577; 
 }
 
@@ -61,9 +61,17 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #182c2d; 
 }
 
 .btn-success {
   background-color: #49B577;
+}
+
+.darkbg {
+  background-color: #182C2D!important;
+}
+
+.textwhite {
+  color: #fff!important;
 }
