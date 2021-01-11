@@ -1,0 +1,90 @@
+<div class="w-100 welcomesection d-flex justify-content-start align-items-center">
+    <div class="container">
+        <h1 class="display-5" style="color: #fff!important;">Olá! É bom te ver por aqui!</h1>
+    </div>
+</div>
+
+<!-- Listar produtos cadastrados -->
+<div class="container my-5 ">
+    <div class="d-flex justify-content-between align-items-center">
+        <h2 class="my-5">Produtos Cadastrados</h2>
+        <button class="btn btnPrimary"
+        [routerLink]="['/cadastro-produto']">
+        <fa-icon [icon]="faPlusCircle" class="faPlusCircle mr-2"></fa-icon>
+        Adicionar novo produto</button>
+    </div>
+    <div class="scrollbar">
+        <table class="table table-striped">
+            <thead>
+                <tr class="">
+                    <th scope="col">id</th>
+                    <th scope="col">Nome do produto</th>
+                    <th scope="col">Quantidade</th>
+                    <th scope="col">Preço</th>
+                    <th scope="col">Categoria</th>
+                    <th></th>
+                    
+                </tr>
+            </thead>
+            <tbody *ngFor='let produto of listaProdutos'>
+                <tr class="">
+                    <th>{{produto.id}}</th>
+                    <td>{{produto.nome}}</td>
+                    <td>{{produto.quantidade}}</td>
+                    <td>{{produto.preco | currency:'BRL' }}</td>
+                    <td>{{produto.categoria.nome}}</td>
+
+                    <div class="d-flex justify-content-end">
+
+                        <button class="btn btn-success mr-3 mt-2"
+                            [routerLink]="['/editar-produto', produto.id]">Editar</button>
+                            
+                        <button class="btn btn-danger ml-3 mt-2 mr-3"
+                            [routerLink]="['/delete-produto', produto.id]">Apagar</button>
+                            
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Criar Categoria nova -->
+
+<hr class="my-3">
+
+
+
+
+<!-- Listar produtos cadastrados -->
+<div class="container my-5" >
+    <h2 class="my-5">Categorias Cadastradas</h2>
+    <div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+
+                    <th scope="col">id</th>
+                    <th scope="col">Nome da categoria</th>
+                    <th></th>                    
+                </tr>
+            </thead>
+            <tbody *ngFor='let categoria of listaCategorias'>
+                <tr>
+                    <td>{{categoria.id}}</td>
+                    <td>{{categoria.nome}}</td>
+
+                    <div class="d-flex justify-content-end" >
+
+                        <button class="btn btn-success mr-3 mt-2" 
+                        [routerLink]="['/editar-categoria', categoria.id]">Editar</button>
+
+                        <button class="btn btn-danger ml-3 mt-2 mr-3" 
+                        [routerLink]="['/delete-categoria', categoria.id]">Apagar</button>
+
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

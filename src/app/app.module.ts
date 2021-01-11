@@ -22,6 +22,7 @@ import { ProductComponent } from './product/product.component';
 import { AlertasComponent } from './alertas/alertas.component';
 import { PesquisaComponent } from './pesquisa/pesquisa.component';
 import { PesquisaCategoriaComponent } from './pesquisa-categoria/pesquisa-categoria.component';
+import { ListaProdutosComponent } from './lista-produtos/lista-produtos.component';
 
  
 @NgModule({
@@ -42,7 +43,8 @@ import { PesquisaCategoriaComponent } from './pesquisa-categoria/pesquisa-catego
     ProductComponent,
     AlertasComponent,
     PesquisaComponent,
-    PesquisaCategoriaComponent
+    PesquisaCategoriaComponent,
+    ListaProdutosComponent
   ],
   imports: [
     BrowserModule,
