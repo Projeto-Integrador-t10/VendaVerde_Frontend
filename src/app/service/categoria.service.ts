@@ -15,12 +15,11 @@ export class CategoriaService {
   }
 
   getAllCategorias(): Observable<Categoria[]> {
-
-    return this.http.get<Categoria[]>('https://oivendaverde.herokuapp.com/categoria', this.token)
+    return this.http.get<Categoria[]>('https://oivendaverde.herokuapp.com/categoria')
   }  
 
   getByIdCategoria(id: number): Observable<Categoria> {
-    return this.http.get<Categoria>(`https://oivendaverde.herokuapp.com/categoria/${id}`, this.token)
+    return this.http.get<Categoria>(`https://oivendaverde.herokuapp.com/categoria/${id}`)
   }
   postCategoria(categoria: Categoria) : Observable<Categoria>  {
     return this.http.post<Categoria>('https://oivendaverde.herokuapp.com/categoria', categoria, this.token)
