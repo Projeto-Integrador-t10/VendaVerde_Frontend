@@ -5,6 +5,7 @@ import { Usuario } from '../model/Usuario';
 import {UsuarioLogin} from '../model/UsuarioLogin'
 import { AlertasService } from '../service/alertas.service';
 import { AuthService } from '../service/auth.service';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-login',
@@ -13,6 +14,8 @@ import { AuthService } from '../service/auth.service';
 })
 
 export class LoginComponent implements OnInit {
+
+  faHome = faHome
 
   usuarioLogin: UsuarioLogin = new UsuarioLogin()
   usuario: Usuario = new Usuario()
@@ -32,7 +35,7 @@ export class LoginComponent implements OnInit {
       this.usuarioLogin = resp
       localStorage.setItem('token', this.usuarioLogin.token)
       environment.admin = this.usuarioLogin.admin
-      this.router.navigate(['/home'])      
+      this.router.navigate(['/cadastro-produto'])      
     }, err =>{
       if(err.status == 500){
         this.alert.showAlertDanger("Usuário/Senha não confere!!")

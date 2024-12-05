@@ -18,30 +18,30 @@ export class ProdutoService {
 
   getAllProdutos(): Observable<Produto[]>{
 
-    return this.http.get<Produto[]>('http://localhost:9000/produtos', this.token)
+    return this.http.get<Produto[]>('https://oivendaverde.herokuapp.com/produtos', this.token)
   }
 
   getByIdProduto(id: number): Observable<Produto>{
-    return this.http.get<Produto>(`http://localhost:9000/produtos/${id}`, this.token)
+    return this.http.get<Produto>(`https://oivendaverde.herokuapp.com/produtos/${id}`, this.token)
   }
 
   getByIdProdutos(id: number) : Observable<Produto>{
-    return this.http.get<Produto>(`http://localhost:9000/produtos/${id}`, this.token)
+    return this.http.get<Produto>(`https://oivendaverde.herokuapp.com/produtos/${id}`, this.token)
   }
   getByNameProduto(nome: string): Observable<Produto[]> { 
-    return this.http.get<Produto[]>(`http://localhost:9000/produtos/nome/${nome}`, this.token)
+    return this.http.get<Produto[]>(`https://oivendaverde.herokuapp.com/produtos/nome/${nome}`, this.token)
   }
 
   postProduto(produto: Produto) : Observable<Produto[]> {
-    return this.http.post<Produto[]>('http://localhost:9000/produtos', produto, this.token)
+    return this.http.post<Produto[]>('http://oivendaverde.herokuapp.com/produtos', produto, this.token)
   }
 
   putProduto(produto: Produto) : Observable<Produto>{
-    return this.http.put<Produto>('http://localhost:9000/produtos', produto ,this.token)
+    return this.http.put<Produto>('https://oivendaverde.herokuapp.com/produtos', produto ,this.token)
   }
 
   deleteProduto(id: number) {
-    return this.http.delete(`http://localhost:9000/produtos/${id}`, this.token)
+    return this.http.delete(`https://oivendaverde.herokuapp.com/produtos/${id}`, this.token)
 
   }
 }

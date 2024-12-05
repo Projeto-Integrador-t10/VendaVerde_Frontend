@@ -8,7 +8,7 @@
             <input type="text" class="form-control" id="categoria" [(ngModel)]="categoria.nome" aria-label="Área para digitar nova categoria"
                 placeholder="Digite aqui o nome da nova categoria">
                 <label class="" for="imagem">Imagem da categoria</label>
-            <input type="text" class="form-control" id="categoria" [(ngModel)]="categoria.img" aria-label="Insira a URL da imagem"
+            <input type="text" class="form-control" id="categoriaIMG" [(ngModel)]="categoria.img" aria-label="Insira a URL da imagem"
                 placeholder="Digite aqui o nome da nova categoria">
             <div class="form-group d-flex justify-content-end">
                 <button type="button" name="salvar" class="btn btn-info my-3" style=" background-color: #286090; border-color: #286090;" (click)='cadastrar()'>Salvar categoria</button>
@@ -94,7 +94,6 @@
                     <th scope="col">Nome do produto</th>
                     <th scope="col">Quantidade</th>
                     <th scope="col">Preço</th>
-                    <th scope="col">Categoria</th>
                     <th></th>
                     
                 </tr>
@@ -105,7 +104,6 @@
                     <td>{{produto.nome}}</td>
                     <td>{{produto.quantidade}}</td>
                     <td>{{produto.preco | currency:'BRL' }}</td>
-                    <td>{{produto.categoria.nome}}</td>
 
                     <div class="d-flex justify-content-end">
 

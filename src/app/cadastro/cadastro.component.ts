@@ -4,12 +4,16 @@ import { Usuario } from '../model/Usuario';
 import { AlertasService } from '../service/alertas.service';
 import { AuthService } from '../service/auth.service';
 
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-cadastro',
   templateUrl: './cadastro.component.html',
   styleUrls: ['./cadastro.component.css']
 })
 export class CadastroComponent implements OnInit {
+
+  faHome = faHome
 
   usuario: Usuario = new Usuario();
   senha: string

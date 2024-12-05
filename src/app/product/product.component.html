@@ -1,7 +1,7 @@
 <div class=" py-3">
-  <div class="produtobg container p-5 mb-5" >
+  <div class="produtobg container py-5 mb-5" >
 
-  <div class=" row m-3 d-flex ">
+  <div class=" row my-3 d-flex ">
     <div class="col-md-8">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -42,14 +42,14 @@
 
 
       <div class="d-flex flex-column justify-content-between">
-        <button class="btn colorbtn m-1 d-flex align-items-center justify-content-center" aria-label="Botão para adicionar o produto ao carrinho"
+        <button class="btn btnlink m-1 d-flex align-items-center justify-content-center text-left" aria-label="Botão para adicionar o produto ao carrinho"
         (click)='carrinho()'>
-        <fa-icon [icon]="faShoppingCart" class="faShoppingCart"></fa-icon>
-        Adicionar ao carrinho
+        <fa-icon [icon]="faShoppingCart" class="faShoppingCart mr-3"></fa-icon>
+         Adicionar ao carrinho
       </button>
-      <button class="btn btn-outline colorbtn m-1" style="border-color: #286090; color: #286090 " aria-label="Botão para doar o produto à alguma ONG"
+      <button class="btn btnPrimaryOutline m-1" aria-label="Botão para doar o produto à alguma ONG"
         (click)='doar()'>Doar</button>
-        <button class="btn btn-success m-1 botao colorcompra" aria-label="Botão para comprar o produto"
+        <button class="btn btnPrimary m-1" aria-label="Botão para comprar o produto"
           (click)='compra()'>Comprar</button>
       </div>
     </div>

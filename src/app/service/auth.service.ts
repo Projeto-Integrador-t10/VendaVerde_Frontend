@@ -18,11 +18,11 @@ export class AuthService {
 
   logar(usuarioLogin: UsuarioLogin) : Observable<UsuarioLogin> {
 
-    return this.http.post<UsuarioLogin>('http://localhost:9000/usuarios/logar', usuarioLogin)
+    return this.http.post<UsuarioLogin>('https://oivendaverde.herokuapp.com/usuarios/logar', usuarioLogin)
   }
 
   cadastrar(usuario: Usuario) : Observable<Usuario> {
-    return this.http.post<Usuario>('http://localhost:9000/usuarios/cadastrar', usuario)
+    return this.http.post<Usuario>('https://oivendaverde.herokuapp.com/usuarios/cadastrar', usuario)
 
   }
   btnSair(){
@@ -44,4 +44,11 @@ export class AuthService {
     if(this.router.url == '/login' || this.router.url == '/cadastro'){ok = false}
     return ok
   }
+
+  navbar(){
+    let ok: boolean = true
+    if(this.router.url == '/login' || this.router.url == '/cadastro'){ok = false}
+    return ok
+  }
+
 }

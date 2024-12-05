@@ -21,7 +21,7 @@
 </section>
 <section class="w-100 fundo animate__animated animate__slideInRight">
   <div class="container">
-    <div class="row row-cols-1 row-cols-md-5">
+    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5">
       <div class="col mb-4" *ngFor="let item of listaProdutos | slice:0:5 ; let i=index ">
         <a [routerLink]='["/prod", item.id]' class="text-dark animate__animated animate__slideInDown">
           <div id="card" class="card border border-success pesquisa ">
